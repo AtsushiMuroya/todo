@@ -5,7 +5,7 @@
 import Image from "next/image";
 import TodoList from "./components/TodoList";
 import AppTask from "./components/AppTask";
-import { getAllTodos } from "./api";
+import { addTodo, getAllTodos } from "./api";
 
 export default async function Home() {
   const todos = await getAllTodos();
