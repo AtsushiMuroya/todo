@@ -1,3 +1,4 @@
+import { Button } from "@/stories/Button"
 import { Todo } from "../types"
 
 interface TodoProps {
@@ -11,6 +12,7 @@ export const TodoLi = ({ todo }: TodoProps) => {
       <div>
         <button className="text-green-500 mr-3">edit</button>
         <button className="text-red-500">delete</button>
+        <Button variant="destructive" label="Destructive" size="default"></Button>
       </div>
     </li>
   )
